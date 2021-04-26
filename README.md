@@ -132,3 +132,8 @@ Try out: `fortune | cowsay | lolcat`
 
 ### lolcat -- concatenate files in rainbow colors
 https://github.com/busyloop/lolcat
+
+
+### pokemonsay -- Pokemon version of cowsay with CLI and API
+https://github.com/possatti/pokemonsay
+
