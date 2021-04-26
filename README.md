@@ -59,6 +59,14 @@ chezmoi appy
 https://github.com/sharkdp/bat
 
 
+### delta -- a viewer for git and diff output
+https://github.com/dandavison/delta
+
+
+### diff-so-fancy -- human readable diffs
+https://github.com/so-fancy/diff-so-fancy
+
+
 ### exa -- a modern replacement for ls
 https://github.com/ogham/exa
 
@@ -93,6 +101,10 @@ https://github.com/dylanaraps/neofetch
 
 ### neovim -- hyperextensible Vim-based text editor
 https://neovim.io/
+
+
+### ranger -- console file manager with VI key bindings
+https://github.com/ranger/ranger
 
 
 ### rg -- ripgrep (search tool like ack and grep)
