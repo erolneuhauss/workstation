@@ -42,7 +42,7 @@ Provided by ubuntu
 #### Prezto -- configuration framework for zsh
 https://github.com/sorin-ionescu/prezto
 
-#### Powerlevel10k -- a theme for Zsh 
+#### Powerlevel10k -- a theme for Zsh
 https://github.com/romkatv/powerlevel10k
 
 
