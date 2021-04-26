@@ -59,6 +59,10 @@ chezmoi appy
 https://github.com/sharkdp/bat
 
 
+### BpyTOP -- resource monitor with game style theme start up
+https://github.com/aristocratos/bpytop
+
+
 ### delta -- a viewer for git and diff output
 https://github.com/dandavison/delta
 
