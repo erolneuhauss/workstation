@@ -18,8 +18,6 @@ Provided by ubuntu.
 And additional packages:
 `gnome-shell-extentions-gpaste gpaste gnome-tweaks`
 
-Not quite sure, if `gnome-shell-*` is needed since I switched over to terminator
-
 
 #### Fonts
 ```
