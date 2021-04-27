@@ -5,12 +5,26 @@ Having a consistent and comprehensible workstation is essential.
 This document should help me understand, why I did things the way I did.
 
 
-## TLDR
-TODO: I am undecided yet, if I am going with `ansible` or `run_once_install-packages.sh`
-
-
 ## My Linux machine as of now: Ubuntu 20.04
+### chezmoi -- manage your personal configuration files
+https://github.com/twpayne/chezmoi
 
+On any other Debian based Linux workstation I am able to recreate my working
+environment and my prefered applications with a few simple `chezmoi` commands.
+
+#### Initialize your configfiles on a second machine
+```
+chezmoi init git@github.com/erolneuhauss/dotfiles.git
+chezmoi appy
+```
+
+This should install packages defined in `run_once_install-packages.sh` and
+configure most importantly ZSH and neovim. There might be additional things to
+consider and configure manually at this moment.
+
+This is WIP.
+
+TODO: setup vagrant and recreate local environment in a virtual machine
 
 ### Standard GNOME Desktop
 Provided by ubuntu.
@@ -45,14 +59,6 @@ https://github.com/romkatv/powerlevel10k
 
 
 ## Install and work with modern and efficient tools
-### chezmoi -- manage your personal configuration files
-https://github.com/twpayne/chezmoi
-
-#### Initialize your configfiles on a second machine
-```
-chezmoi init git@github.com/erolneuhauss/dotfiles.git
-chezmoi appy
-```
 ### bat -- cat(1) clone with wings
 https://github.com/sharkdp/bat
 
@@ -134,4 +140,8 @@ https://github.com/busyloop/lolcat
 
 ### pokemonsay -- Pokemon version of cowsay with CLI and API
 https://github.com/possatti/pokemonsay
+
+
+### xcowsay -- displays a cute cow mand message on your Linux Desktop
+Provided by Ubuntu
 
