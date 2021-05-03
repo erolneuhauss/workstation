@@ -168,6 +168,8 @@ Provided by Ubuntu
 
 Try out: `fortune | cowsay | lolcat`
 
+My personal cheat sheet like forunes: https://github.com/erolneuhauss/fortunes
+
 
 ### lolcat -- concatenate files in rainbow colors
 https://github.com/busyloop/lolcat
