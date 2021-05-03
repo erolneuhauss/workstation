@@ -2,24 +2,70 @@
 ...somewhat comprehensible for my future self.
 
 Having a consistent and comprehensible workstation is essential.
-This document should help me understand, why I did things the way I did.
+This document should help me to reproduce my working environment on another
+machine.
 
 
 ## My Linux machine as of now: Ubuntu 20.04
+### ZSH
+Install Zsh:
+```console
+sudo apt install -y zsh
+```
+
+Set Zsh as your default shell:
+```console
+chsh -s /bin/zsh
+```
+
+Launch Zsh:
+
+```console
+zsh
+
+# Do not configure zsh yet. This is done in the 'Prezto' section
+# Instead delete .zshrc
+
+rm -f ~/.zshrc
+```
+
+#### Prezto -- configuration framework for zsh
+https://github.com/erolneuhauss/prezto
+
+With zsh run console, clone the repository:
+
+```console
+git clone --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+Symlink zsh configuration files:
+
+```sh
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
 ### chezmoi -- manage your personal configuration files
 https://github.com/twpayne/chezmoi
 
 On any other Debian based Linux workstation I am able to recreate my working
 environment and my prefered applications with a few simple `chezmoi` commands.
 
+#### Install chezmoi
+Clone this repository cd into it and run `./install.sh`
+
 #### Initialize your configfiles on a second machine
-```
+
+```console
 chezmoi init git@github.com/erolneuhauss/dotfiles.git
 chezmoi appy
 ```
 
 This should install packages defined in `run_once_install-packages.sh` and
-configure most importantly ZSH and neovim. There might be additional things to
+configure some '.dotfiles' but most importantly neovim.
+There might be additional things to
 consider and configure manually at this moment.
 
 This is WIP.
@@ -34,11 +80,12 @@ And additional packages:
 
 
 #### Fonts
-```
+```console
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts
 ./install.sh DejaVuSansMono
 ```
+
 Use desktop application `gnome-tweaks` in order to set `Fonts` to
 `DejaVuSansMono Nerd Font Book`
 
@@ -46,13 +93,6 @@ Use desktop application `gnome-tweaks` in order to set `Fonts` to
 ### terminator -- multiple GNOME terminals in one window
 Provided by ubuntu
 
-
-### ZSH
-Provided by ubuntu
-
-
-#### Prezto -- configuration framework for zsh
-https://github.com/sorin-ionescu/prezto
 
 #### Powerlevel10k -- a theme for Zsh
 https://github.com/romkatv/powerlevel10k
