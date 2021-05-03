@@ -29,16 +29,16 @@ zsh
 rm -f ~/.zshrc
 ```
 
-#### Prezto -- configuration framework for zsh
+### Prezto -- configuration framework for zsh
 https://github.com/erolneuhauss/prezto
 
-With zsh run console, clone the repository:
+Run `zsh` run and clone the repository into `.zprezto` like this:
 
 ```console
 git clone --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
-Symlink zsh configuration files:
+Symlink zsh configuration files like this. Run it in `zsh`:
 
 ```sh
 setopt EXTENDED_GLOB
@@ -54,7 +54,8 @@ On any other Debian based Linux workstation I am able to recreate my working
 environment and my prefered applications with a few simple `chezmoi` commands.
 
 #### Install chezmoi
-Clone this repository cd into it and run `./install.sh`
+Clone this repository https://github.com/erolneuhauss/workstation.git,
+cd into it and run `./install.sh`
 
 #### Initialize your configfiles on a second machine
 
