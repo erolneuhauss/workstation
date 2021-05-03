@@ -19,16 +19,13 @@ chsh -s /bin/zsh
 ```
 
 Launch Zsh:
-
 ```console
 zsh
 
-# Do not configure zsh yet. This is done in the 'Prezto' section
-
+# Do not configure zsh yet! This is done in the 'Prezto' section. See below.
 (q)  Quit and do nothing
 
 # and delete .zshrc, if exists
-
 rm -f ~/.zshrc || true
 ```
 
@@ -36,7 +33,6 @@ rm -f ~/.zshrc || true
 https://github.com/erolneuhauss/prezto (forked from sorin-ionescu/prezto)
 
 In `zsh` shell clone the repository into `.zprezto` like this:
-
 ```console
 git clone --branch main --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
@@ -54,7 +50,6 @@ Clone this repository https://github.com/erolneuhauss/workstation.git,
 cd into it and run `./install.sh`
 
 #### Initialize your configfiles on a second machine
-
 ```console
 chezmoi init git@github.com/erolneuhauss/dotfiles.git
 chezmoi appy
