@@ -73,12 +73,8 @@ And additional packages:
 `gnome-shell-extentions-gpaste gpaste gnome-tweaks`
 
 
-#### Fonts
-```console
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
-cd nerd-fonts
-./install.sh DejaVuSansMono
-```
+### Nerd Font DejaVuSansMono
+Installed via `run_once_install-packages.sh` in my `dotfiles.git`
 
 Use desktop application `gnome-tweaks` in order to set `Fonts` to
 `DejaVuSansMono Nerd Font Book`
@@ -138,6 +134,8 @@ https://github.com/dylanaraps/neofetch
 
 ### neovim -- hyperextensible Vim-based text editor
 https://neovim.io/
+
+Plugins are installed via `dotfiles.git`
 
 
 #### Powerlevel10k -- a theme for Zsh
