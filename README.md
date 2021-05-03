@@ -7,6 +7,9 @@ machine.
 
 
 ## My Linux machine as of now: Ubuntu 20.04
+Clone this repository https://github.com/erolneuhauss/workstation.git
+You will need to run some scripts.
+
 ### ZSH
 Install Zsh:
 ```console
@@ -37,7 +40,7 @@ In `zsh` shell clone the repository into `.zprezto` like this:
 git clone --branch main --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
-Create symbolic links to zsh configuration. Run `./symlink_runcoms.sh`.
+Create symbolic links to zsh configuration by running `./symlink_runcoms.sh`.
 
 ### chezmoi -- manage your personal configuration files
 https://github.com/twpayne/chezmoi
@@ -46,8 +49,7 @@ On any other Debian based Linux workstation I am able to recreate my working
 environment and my prefered applications with a few simple `chezmoi` commands.
 
 #### Install chezmoi
-Clone this repository https://github.com/erolneuhauss/workstation.git,
-cd into it and run `./install.sh`
+Run `./install.sh`
 
 #### Initialize your configfiles on a second machine
 ```console
