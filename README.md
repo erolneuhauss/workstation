@@ -1,5 +1,5 @@
-# Make My Debian Based Linux Workstation...
-...somewhat comprehensible for my future self.
+# Make My Debian Based Linux Workstation…
+…somewhat comprehensible for my future self.
 
 Having a consistent and comprehensible workstation is essential.
 This document should help me to reproduce my working environment on another
@@ -25,7 +25,7 @@ Launch Zsh:
 ```console
 zsh
 
-# Do not configure zsh yet! This is done in the 'Prezto' section. See below.
+# Do not configure zsh yet. This is done in the 'Prezto' section. See below.
 (q)  Quit and do nothing
 
 # and delete .zshrc, if exists
@@ -53,7 +53,7 @@ Run `./install_chezmoi.sh`
 
 #### Initialize your configfiles on a second machine
 ```console
-chezmoi init git@github.com/erolneuhauss/dotfiles.git
+chezmoi init https://github.com/erolneuhauss/dotfiles.git
 chezmoi appy
 ```
 
