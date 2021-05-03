@@ -24,28 +24,24 @@ Launch Zsh:
 zsh
 
 # Do not configure zsh yet. This is done in the 'Prezto' section
-# Instead delete .zshrc
 
-rm -f ~/.zshrc
+(q)  Quit and do nothing
+
+# and delete .zshrc, if exists
+
+rm -f ~/.zshrc || true
 ```
 
 ### Prezto -- configuration framework for zsh
-https://github.com/erolneuhauss/prezto
+https://github.com/erolneuhauss/prezto (forked from sorin-ionescu/prezto)
 
-Run `zsh` run and clone the repository into `.zprezto` like this:
+In `zsh` shell clone the repository into `.zprezto` like this:
 
 ```console
-git clone --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+git clone --branch main --recursive https://github.com/erolneuhauss/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
-Symlink zsh configuration files like this. Run it in `zsh`:
-
-```sh
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-```
+Create symbolic links to zsh configuration. Run `./symlink_runcoms.sh`.
 
 ### chezmoi -- manage your personal configuration files
 https://github.com/twpayne/chezmoi
