@@ -82,15 +82,10 @@ Use desktop application `gnome-tweaks` in order to set `Fonts` to
 `DejaVuSansMono Nerd Font Book`
 
 
-### terminator -- multiple GNOME terminals in one window
-Provided by ubuntu
-
-
-#### Powerlevel10k -- a theme for Zsh
-https://github.com/romkatv/powerlevel10k
-
-
 ## Install and work with modern and efficient tools
+With `chezmoi appy` following tools are going to be installed besides a hole
+bunch of other tools not mentioned here.
+
 ### bat -- cat(1) clone with wings
 https://github.com/sharkdp/bat
 
@@ -143,12 +138,20 @@ https://github.com/dylanaraps/neofetch
 https://neovim.io/
 
 
+#### Powerlevel10k -- a theme for Zsh
+https://github.com/romkatv/powerlevel10k
+
+
 ### ranger -- console file manager with VI key bindings
 https://github.com/ranger/ranger
 
 
 ### rg -- ripgrep (search tool like ack and grep)
 https://github.com/BurntSushi/ripgrep
+
+
+### terminator -- multiple GNOME terminals in one window
+Provided by ubuntu
 
 
 ### thefuck -- corrects errors in previous console commands
