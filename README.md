@@ -6,9 +6,21 @@ This document should help me to reproduce my working environment on another
 machine.
 
 
-## My Linux machine as of now: Ubuntu 20.04
+## My Linux machine as of now: Ubuntu 20.04 with Regolith desktop environment
 Clone this repository https://github.com/erolneuhauss/workstation.git
 You will need to run some scripts.
+
+### Regolith desktop environment 
+https://regolith-linux.org
+
+```
+Perhaps the most user-impacting component in Regolith is the window manager,
+an open source project called i3-gaps (which is a customization of i3-wm).
+This program organizes windows into tiles.
+```
+
+So I have installed the Regolith desktop into an my existing Ubuntu 20.04 LTS
+by adding a Regolith PPA (https://regolith-linux.org/download/)
 
 ### ZSH
 Install Zsh:
@@ -65,13 +77,6 @@ consider and configure manually at this moment.
 This is WIP.
 
 TODO: setup vagrant and recreate local environment in a virtual machine
-
-### Standard GNOME Desktop
-Provided by ubuntu.
-
-And additional packages:
-`gnome-shell-extentions-gpaste gpaste gnome-tweaks`
-
 
 ### Nerd Font DejaVuSansMono
 Installed via `run_once_install-packages.sh` in my `dotfiles.git`
