@@ -66,7 +66,7 @@ Run `./install_chezmoi.sh`
 #### Initialize your configfiles on a second machine
 ```console
 chezmoi init https://github.com/erolneuhauss/dotfiles.git
-chezmoi appy
+chezmoi apply
 ```
 
 This should install packages defined in `run_once_install-packages.sh` and
